@@ -15,9 +15,6 @@ header{
 	background-repeat: no-repeat;
 	background-size: 100% 90%;
 }	
-header img{
-	background: 
-}
 header div.menu a{
 	display: block;
 	margin: 0 auto;
@@ -30,7 +27,7 @@ header nav ul li{
 	float: right;
 }
 
-.row.menu #logo{
+.row.menu .logo{
 	color: white;
 	font-family: 'Calligraffitti', cursive;
 	font-size: 48px;
@@ -58,8 +55,8 @@ header nav ul li{
 	list-style-type: none;
 }
 .container-fluid {
-   	padding: 0px;
-  	width: 85%;
+	padding: 0px;
+	width: 85%;
 }
 .row.menu ul li a:hover{
 	background: black;
@@ -119,6 +116,9 @@ header nav ul li{
 	border-radius: 10px;
 	position: relative;
 }
+.form form{
+	width: 100%;
+}
 .form span{
 	margin-top: 33px;
 	margin-bottom: 37px;
@@ -175,8 +175,8 @@ input[type="text"]:hover {
 	justify-content: center;
 }
 .form a:hover {
-    -webkit-filter: brightness(90%);
-    filter: brightness(90%);
+	-webkit-filter: brightness(90%);
+	filter: brightness(90%);
 }
 .checkbox {
 	display: -webkit-box;
@@ -194,17 +194,17 @@ input[type="text"]:hover {
 	width: 18px;
 	height: 19px;
 	cursor: pointer;
-  	-webkit-appearance: none;
-  	-moz-appearance: none;
-  	appearance: none;
-  	outline: 0;
- 	background: #eee;
- 	border-radius: 5px;	 	 	
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: 0;
+	background: #eee;
+	border-radius: 5px;	 	 	
 	-webkit-filter: brightness(90%);	 	 	
 	filter: brightness(90%);
 }	
 .form input[type="checkbox"]:checked {
-  	background: #000;
+	background: #000;
 }
 
 .form label{
@@ -421,7 +421,7 @@ input[type="text"]:hover {
 	font-weight: 700;
 	line-height: 28px;
 	letter-spacing: -0.4px;
-	}
+}
 .pricing-list a{
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -611,7 +611,7 @@ input[type="text"]:hover {
 	color: #c62314;
 	letter-spacing: 1.4px;
 }
-.footer a#logo{
+.footer a.logo{
 	font-family: 'Calligraffitti', cursive;
 	font-size: 64px;
 	font-weight: 700;
@@ -664,11 +664,11 @@ input[type="text"]:hover {
 	header{
 		background-size: auto;
 	}
-	a#logo{
+	a.logo{
 		width: 100%;
 		text-align: center;
 	}
-	.row.menu #logo{
+	.row.menu .logo{
 		padding-top: 10%;
 		font-size: 65px;
 	}
@@ -691,6 +691,7 @@ input[type="text"]:hover {
 		text-align: center;
 	}
 	.BLOCKFORFORM{
+		width: 100%;
 		margin-top: 4%;
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -806,8 +807,8 @@ input[type="text"]:hover {
 }	
 @media (max-width: 640px) {
 	.container-fluid {
-   		padding: 0px;
-  		width: 100%;
+		padding: 0px;
+		width: 100%;
 	}
 	nav ul {
 		display: -webkit-box;
@@ -845,7 +846,7 @@ input[type="text"]:hover {
 	.footer{
 		padding: 0 15px;
 	}
-	.footer a#logo{
+	.footer a.logo{
 		width: 45%;
 		font-size: 45px;
 	}
@@ -866,58 +867,58 @@ input[type="text"]:hover {
 
 @media (max-width: 480px) {
 	.row.menu ul li a{
-	margin: 0;
-	padding: 9px;
-    }
-    .middle .row h1{
-    	height: 320px;
-    	font-size: 95px; 
-    	line-height: 75px;
-    }
-    .middle .row p{
-    	margin-top: 0;
-    }	
-    .middle .form{
-    	width: 95%;
-    }
-    .middle .checkbox{
+		margin: 0;
+		padding: 9px;
+	}
+	.middle .row h1{
+		height: 320px;
+		font-size: 95px; 
+		line-height: 75px;
+	}
+	.middle .row p{
+		margin-top: 0;
+	}	
+	.middle .form{
+		width: 95%;
+	}
+	.middle .checkbox{
 		width: 88%;
-    }
-    .middle .checkbox label{
+	}
+	.middle .checkbox label{
 		font-size: 18px;
 		width: 100%;
-    }
-    .story{
-    	margin-top: 0;
-    	height: 100%;
-    	-webkit-box-orient: vertical;
-    	-webkit-box-direction: normal;
-    	-ms-flex-direction: column;
-    	flex-direction: column;
-    }
-    .story p{
+	}
+	.story{
+		margin-top: 0;
+		height: 100%;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.story p{
 		text-align: center;
-    }	
-    .story a{
-    	height: 40px;
-    	width: 80%;
-    	margin-bottom: 2%;
-    }
-    .prefooter{
-    	display: none;
-    }
-    .footer{
-    	margin-top: 0;
-    	-webkit-box-orient: vertical;
-    	-webkit-box-direction: normal;
-    	-ms-flex-direction: column;
-    	flex-direction: column;
-    	-ms-flex-pack: distribute;
-    	justify-content: space-around;
-    	text-align: center;
-    }
-    .footer a#logo{
-    	width: 100%;
-    }
+	}	
+	.story a{
+		height: 40px;
+		width: 80%;
+		margin-bottom: 2%;
+	}
+	.prefooter{
+		display: none;
+	}
+	.footer{
+		margin-top: 0;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+		text-align: center;
+	}
+	.footer a.logo{
+		width: 100%;
+	}
 }
 
