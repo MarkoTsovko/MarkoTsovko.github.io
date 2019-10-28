@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Be.Pro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrap"></div>
+	<header>
+		<div class="row">
+			<div class="logo">Be.Pro</div>
+			<div class="nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Page</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Elements</a></li>
+				</ul>
+			</div>
+			<div class="cart">
+				<a href="#"><i id="icon__cart" class="icon ion-md-cart"><span>0</span></i></a>
+				<a href="#"><i id="icon__search" class="icon ion-md-search"></i></a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="header__category">
+			<h1>Men’s Lifestyle Clothing</h1>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Catalog</a></li>
+				<li><a href="#">Men</a></li>
+				<li><a href="#">Clothing</a></li>
+			</ul>
+		</div>
+		<div class="lifestyle wrap">
+			<div class="lifestyle__first">
+				<div class="lifestyle__first__left">
+					<span>lifestyle</span>
+					<h2>New Now: Striped cotton</h2>
+					<a href="#">More info</a>
+				</div>
+				<div class="lifestyle__first__right">
+					<img src="img/image.png" alt="img">
+				</div>
+			</div>
+			<div class="lifestyle__second">
+				<div class="lifestyle__second__left">
+					<img src="img/image2.png" alt="img2">
+				</div>
+				<div class="lifestyle__second__right">
+					<span>lifestyle</span>
+					<h2>Fashion Collecttion</h2>
+					<a href="#">More info</a>
+				</div>
+			</div>
+		</div>
+		<div class="filter wrap">
+			<div class="filter__udpate">
+				<p>Filter</p>
+				<div class="filter__checkbox">
+					<input type="checkbox" onclick="myFunction()" />
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="filter__update__icon">
+					<a href="#"><span><i class="fas fa-sync-alt"></i></span></a>
+				</div>
+			</div>
+			<div class="sort">
+				<select id='stuff'>
+					<option>Sort By: Price $ - $$</option>
+				</select>
+			</div>
+			<div class="show">
+				<select>
+					<option>Show: 16</option>
+				</select>
+			</div>
+			<div class="filter__small">
+				<a href="#"><i class="fas fa-th"></i></a>
+			</div>
+			<div class="filter__large">
+				<a href="#"><i class="fas fa-th-list"></i></a>
+			</div>
+			<div class="showall">
+				<a href="#">View All</a>
+			</div>
+		</div>
+		<div class="catalog wrap">
+			<div class="filter__categories" id="categories">
+				<div class="categories__block">
+					<div class="filter__categories__link">
+						<a href="#"><i class="fas fa-angle-down"></i></a>
+						<h2>Categories</h2>
+						<a href="#"><i class="fas fa-times"></i></a>
+					</div>
+					<div class="categories">
+						<ul>
+							<li class="active">
+								<a href="#" class="active">Lifestyle</a>
+								<span class="active">01</span>
+							</li>
+							<li>
+								<a href="#">Running</a>
+								<span>15</span>
+							</li>
+							<li>
+								<a href="#">Training & Gym</a>
+								<span>20</span>
+							</li>
+							<li>
+								<a href="#">Clothing</a>
+								<span>25</span>
+							</li>
+							<li>
+								<a href="#">Scarves</a>
+								<span>30</span>
+							</li>
+							<li>
+								<a href="#">Accessories</a>
+								<span>35</span>
+							</li>
+							<li>
+								<a href="#">Shoes</a>
+								<span>45</span>
+							</li>
+							<li>
+								<a href="#">Fragrance</a>
+								<span>50</span>
+							</li>
+							<li>
+								<a href="#">Football</a>
+								<span>32</span>
+							</li>
+						</ul>
+					</div>			
+				</div>
+				<div class="price__range">
+					<div class="price__range__link">
+						<a href="#"><i class="fas fa-angle-down"></i></a>
+						<h2>Price range</h2>
+						<a href="#"><i class="fas fa-times"></i></a>
+					</div>
+					<div class="caclucalot__price__range">
+						<div class="caclucalot__price__range__inputs">
+							<input type="text" value="$50">
+							<input type="text" value="$300">
+						</div>
+						<div class="caclucalot__price__range__bar">
+							<input type="range">
+							<div class="price__range__minmax">
+								<span id="min__price">$10</span>
+								<span id="max__price">$1000</span>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="filter__color">
+					<div class="filter__color__link">
+						<a href="#"><i class="fas fa-angle-down"></i></a>
+						<h2>Color</h2>
+						<a href="#"><i class="fas fa-times"></i></a>
+					</div>
+					<div class="filter__color__picker">
+						<div class="color__picker__input">
+							<input type="radio" class="option-input radio" name="example" checked id="filter__white">
+						</div>
+
+						<div class="color__picker__input">
+							<input type="radio" class="option-input radio" name="example" id="filter__red">
+						</div>
+
+						<div class="color__picker__input">
+							<input type="radio" class="option-input radio" name="example" id="filter__yellow">
+						</div>
+
+						<div class="color__picker__input">
+							<input type="radio" class="option-input radio" name="example" id="filter__green">
+						</div>
+
+						<div class="color__picker__input">
+							<input type="radio" class="option-input radio" name="example" id="filter__blue">
+						</div>
+
+						<div class="color__picker__input">
+							<input type="radio" class="option-input radio" name="example" id="filter__purple">
+						</div>
+
+						<div class="color__picker__input">
+							<input type="radio" class="option-input radio" name="example" id="filter__lime">
+						</div>
+
+						<div class="color__picker__input">
+							<input type="radio" class="option-input radio" name="example" id="filter__orange">	
+						</div>
+
+					</div>
+				</div>
+				<div class="filter__size">
+					<div class="filter__size__link">
+						<a href="#"><i class="fas fa-angle-down"></i></a>
+						<h2>Size</h2>
+						<a href="#"><i class="fas fa-times"></i></a>
+					</div>
+					<form>
+						<div class="filter__size__picker">
+							<div class="size__picker__block">
+								<input type="radio" id="size__s" name="switch" value="s">
+								<label for="size__s">S</label>
+							</div>
+							<div class="size__picker__block">
+								<input type="radio" id="size__m" name="switch" value="m">
+								<label for="size__m">M</label>
+							</div>
+							<div class="size__picker__block">
+								<input type="radio" id="size__l" name="switch" value="l">
+								<label for="size__l">L</label>
+							</div>
+							<div class="size__picker__block last">
+								<input type="radio" id="size__xl" name="switch" value="xl">
+								<label for="size__xl">XL</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="items">
+				<div class="catalog__items">
+					<div class="catalog__item catalog__item__one">
+						<div class="catalog__item__photo">
+							<img src="img/catalogitem1.png" alt="#">
+						</div>
+						<h3>Essential cotton-blend</h3>
+						<div class="catalog__item__price">
+							<span class="old__price">$200.00 USD</span>
+							<span class="new__price">$100.00 USD</span>	
+						</div>
+					</div>
+					<div class="catalog__item catalog__item__two">
+						<div class="catalog__item__photo">
+							<img src="img/catalogitem2.png" alt="#">
+						</div>
+						<h3>Flecked cotton-blend</h3>
+						<div class="catalog__item__price">
+							<span class="old__price"></span>
+							<span class="new__price">$175.00 USD</span>	
+						</div>
+					</div>
+					<div class="catalog__item catalog__item__two">
+						<div class="catalog__item__photo">
+							<img src="img/catalogitem3.png" alt="#">
+						</div>
+						<h3>Striped cotton t-shirt</h3>
+						<div class="catalog__item__price">
+							<span class="old__price">$200.00 USD</span>
+							<span class="new__price">$100.00 USD</span>	
+						</div>
+					</div>
+					<div class="catalog__item catalog__item__one">
+						<div class="catalog__item__photo">
+							<img src="img/catalogitem4.png" alt="#">
+						</div>
+						<h3>Sequin star t-shirt</h3>
+						<div class="catalog__item__price">
+							<span class="old__price"></span>
+							<span class="new__price">$200.00 USD</span>	
+						</div>
+					</div>
+					<div class="catalog__item catalog__item__two">
+						<div class="catalog__item__photo">
+							<img src="img/catalogitem5.png" alt="#">
+						</div>
+						<h3>Ruffle sleeve t-shirt</h3>
+						<div class="catalog__item__price">
+							<span class="old__price">$200.00 USD</span>
+							<span class="new__price">$100.00 USD</span>	
+						</div>
+					</div>
+					<div class="catalog__item catalog__item__two">
+						<div class="catalog__item__photo">
+							<img src="img/catalogitem6.png" alt="#">
+						</div>
+						<h3>Double layer top</h3>
+						<div class="catalog__item__price">
+							<span class="old__price"></span>
+							<span class="new__price">$175.00 USD</span>	
+						</div>
+					</div>
+					<div class="catalog__item catalog__item__one">
+						<div class="catalog__item__photo">
+							<img src="img/catalogitem7.png" alt="#">
+						</div>
+						<h3>V-neck cotton t-shirt</h3>
+						<div class="catalog__item__price">
+							<span class="old__price"></span>
+							<span class="new__price">$200.00 USD</span>	
+						</div>
+					</div>
+					<div class="catalog__item catalog__item__two">
+						<div class="catalog__item__photo">
+							<img src="img/catalogitem8.png" alt="#">
+						</div>
+						<h3>Message cotton t-shirt</h3>
+						<div class="catalog__item__price">
+							<span class="old__price"></span>
+							<span class="new__price">$100.00 USD</span>	
+						</div>
+					</div>
+					<div class="catalog__item catalog__item__two">
+						<div class="catalog__item__photo">
+							<img src="img/catalogitem9.png" alt="#">
+						</div>
+						<h3>Nike Dry Swoosh</h3>
+						<div class="catalog__item__price">
+							<span class="old__price">$200.00 USD</span>
+							<span class="new__price">$100.00 USD</span>	
+						</div>
+						
+					</div>
+				</div>
+				<div class="link__load">
+					<a href="#"><span><i class="fas fa-sync-alt"></i></span>Load more</a>
+				</div>
+			</div>
+		</div>
+		<div class="pagination wrap">
+			<a href="#" class="arrow-left"><i class="fas fa-angle-left"></i></a>
+			<ul>
+				<li><a href="#">01</a></li>
+				<li><a href="#">02</a></li>
+				<li class="active"><a href="#">03</a></li>
+				<li><a href="#">04</a></li>
+				<li class="last"><a href="#">05</a></li>
+			</ul>
+			<a href="#" class="arrow-right"><i class="fas fa-angle-right"></i></a>
+		</div>
+		<div class="new__product">
+			<div id="slider">
+				<div class="inner">
+					<input checked type="radio" name="slide" class="control" id="Slide1" />
+					<label for="Slide1" id="s1"></label>
+					<input type="radio" name="slide" class="control" id="Slide2" />
+					<label for="Slide2" id="s2"></label>
+					<input type="radio" name="slide" class="control" id="Slide3" />
+					<label for="Slide3" id="s3"></label>
+					<div class="overflow">
+						<div class="slide" >
+							<a href="#">
+							<div class="slide_text">
+								<p>New Product</p>
+								<h3>The new Collection of Summer</h3>
+							</div>
+							<img src="img/new__product.png" alt="img">
+							</a>
+						</div>
+						<div class="slide">
+							<a href="#">
+							<div class="slide_text">
+								<p>New Product</p>
+								<h3>The new Collection of Summer</h3>
+							</div>
+							<img src="img/new__product.png" alt="img">
+							</a>
+						</div>
+						<div class="slide">
+							<a href="#">
+							<div class="slide_text">
+								<p>New Product</p>
+								<h3>The new Collection of Summer</h3>
+							</div>
+							<img src="img/new__product.png" alt="img">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sl wrap">
+			<div class="sl__slide"><img src="img/logo1.png" alt="#"></div>
+			<div class="sl__slide"><img src="img/logo2.png" alt="#"></div>
+			<div class="sl__slide"><img src="img/logo3.png" alt="#"></div>
+			<div class="sl__slide"><img src="img/logo4.png" alt="#"></div>
+			<div class="sl__slide"><img src="img/logo1.png" alt="#"></div>
+			<div class="sl__slide"><img src="img/logo2.png" alt="#"></div>
+			<div class="sl__slide"><img src="img/logo3.png" alt="#"></div>
+			<div class="sl__slide"><img src="img/logo4.png" alt="#"></div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer__logo">
+			<h2>ModaX</h2>
+			<div class="footer__social__links">
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-behance"></i></a>
+				<a href="#"><i class="fab fa-dribbble"></i></a>
+				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+		</div>
+		<div class="footer__menu">
+			<div class="footer__menu__links">
+				<ul>
+					<li><a href="#">Man</a></li>
+					<li><a href="#">Woman</a></li>
+					<li><a href="#">Lookbook</a></li>
+					<li><a href="#">Sale</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+			</div>
+			<div class="footer__form">
+				<h3>Subscribe to news</h3>
+				<form>
+					<input type="text" placeholder="Email Adrress">
+					<button>Submit</button>
+				</form>
+			</div>
+		</div>
+		<div class="footer__contact__us">
+			<div class="footer__address">
+				<h3>Contact US</h3>
+				<p>San Francisco, California 400 Castro St, San Francisco, CA (+1) 686-868-9999</p>
+			</div>
+			<div class="footer__payment">
+				<a href="#"><img src="img/visa.png" alt="#"></a>
+				<a href="#"><img src="img/paypal.png" alt="#"></a>
+				<a href="#"><img src="img/mastercard.png" alt="#"></a>
+				<a href="#"><img src="img/card.png" alt="#"></a>
+				<a href="#"><img src="img/amex.png" alt="#"></a>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.4.0.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/iconify.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
