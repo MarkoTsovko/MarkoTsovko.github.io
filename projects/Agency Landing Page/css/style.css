@@ -674,6 +674,8 @@ footer{
 	}
 	.header__main__left h1{
 		margin-top: 30px;
+		padding: 0 15px;
+		font-size: 2.5em;
 	}
 	.header__main__left a{
 		margin-top: 50px;
@@ -876,6 +878,12 @@ footer{
 	.menu{
 		font-size: 0.8em;
 	}
+	.menu li a{
+		padding: 35px 15px;
+	}	
+	.header__main__left h1{
+		font-size: 2.2em;
+	}	
 	.main__text h2{
 		font-size: 2em;
 	}
@@ -949,7 +957,7 @@ footer{
 		background: none;
 	}	
 	.header__main__left h1{
-		font-size: 2em;
+		font-size: 1.8em;
 		line-height: 45px;
 	}
 	.main__text .main__text__right .blocks {
